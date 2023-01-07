@@ -24,14 +24,12 @@ vector<int> merge_sort(vector<int>a) {
         if (idx1 == sorted_b.size()) {
             sorted_a.push_back(sorted_c[idx2]);
             idx2++;
-            continue;
         }
         else if (idx2 == sorted_c.size()) {
             sorted_a.push_back(sorted_b[idx1]);
             idx1++;
-            continue;
         }
-        if (sorted_b[idx1] < sorted_c[idx2]) {
+        else if (sorted_b[idx1] < sorted_c[idx2]) {
             sorted_a.push_back(sorted_b[idx1]);
             idx1++;
         }
