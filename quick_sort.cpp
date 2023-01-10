@@ -6,6 +6,7 @@
 using namespace std;
 
 vector<int> quick_sort(vector<int>&a){
+    // base case
     if(a.size() <= 1) return a;
 
     int pivot = a.size()-1;
